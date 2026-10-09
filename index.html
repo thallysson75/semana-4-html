@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto JavaScript — Arrays, DOM e Eventos</title>
+  <style>
+    body {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #202938;
+      background: #f5f7fb;
+    }
+    main {
+      padding: 1.5rem;
+      background: #fff;
+      border: 1px solid #dce2ec;
+      border-radius: 12px;
+    }
+    button, input {
+      padding: .65rem .8rem;
+      font: inherit;
+    }
+    button { cursor: pointer; }
+    form { display: flex; gap: .5rem; flex-wrap: wrap; }
+    input { flex: 1 1 220px; }
+    li { margin: .3rem 0; cursor: pointer; }
+    .destaque { color: #4338ca; font-weight: bold; }
+    .feito { text-decoration: line-through; color: #64748b; }
+    section { margin: 1.5rem 0; }
+  </style>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 id="titulo">Blog de JavaScript</h1>
+
+    <section>
+      <h2>Parágrafos de exemplo</h2>
+      <p class="texto">Este é o primeiro parágrafo.</p>
+      <p class="texto">Este é o segundo parágrafo.</p>
+      <p class="texto">Este é o terceiro parágrafo.</p>
+    </section>
+
+    <section>
+      <h2>Lista de itens e tarefas</h2>
+      <p>Clique em qualquer item da lista para marcar ou desmarcar como feito.</p>
+      <ul id="lista">
+        <li>Item inicial um</li>
+        <li>Item inicial dois</li>
+        <li>Item inicial três</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Eventos do botão</h2>
+      <button id="botao" type="button">Clique aqui</button>
+    </section>
+
+    <section>
+      <h2>Evento de teclado</h2>
+      <label for="nome">Digite seu nome:</label>
+      <input id="nome" type="text" placeholder="Seu nome">
+    </section>
+
+    <section>
+      <h2>Adicionar tarefa</h2>
+      <form id="formulario">
+        <label for="tarefa">Nova tarefa:</label>
+        <input id="tarefa" type="text" placeholder="Digite uma tarefa">
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
